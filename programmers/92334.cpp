@@ -76,10 +76,6 @@ vector<int> solution3(vector<string> id_list, vector<string> report, int k) {
     unordered_map<string, vector<string>> map; // <id, <정지 대상리스트>>;
     unordered_map<string, int> map2; // 정지를 위한 맵
 
-    // for( auto id : id_list ){
-    //     map2[id]=0;
-    // }
-
     for( auto rep : report ){
         int space = rep.find(" ");
         string rep1 = rep.substr(0, space);
@@ -91,16 +87,6 @@ vector<int> solution3(vector<string> id_list, vector<string> report, int k) {
             continue;
         }
     }
-    // s.erase(unique(s.begin(),s.end()),s.end());
-
-
-    // for(auto m : map){
-    //     if(m.second.size() >= k){
-    //         answer.push_back(m.second.size());
-    //     }else{
-    //         answer.push_back(0);
-    //     }
-    // }
 
     for(auto m : map){
         if(m.second.size()>=k){
@@ -109,11 +95,6 @@ vector<int> solution3(vector<string> id_list, vector<string> report, int k) {
             }
         }
     }
-
-    // for(auto m: map2){
-    //     cout << m.first << "::" << m.second<<endl;
-    //     // answer.push_back(m.second);
-    // }
 
     for( auto id : id_list){
         answer.push_back(map2[id]);
