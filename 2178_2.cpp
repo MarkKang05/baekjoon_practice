@@ -1,5 +1,6 @@
 #include <iostream>
 #include <queue>
+#include <tuple>
 using namespace std;
 
 int dy[4] = {-1, 0, 1, 0};
@@ -36,7 +37,7 @@ int main(int argc, char const *argv[])
         }
     }
 
-    cout << visited[n-1][m-1]<<"\n";
+    cout << visited[n-1][m-1]+1<<"\n";
     
     return 0;
 }
