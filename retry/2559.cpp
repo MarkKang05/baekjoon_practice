@@ -14,7 +14,7 @@ int main(int argc, char const *argv[])
     }
 
     int ret = -10000004;
-    for(int i=k; i<n; i++){
+    for(int i=k; i<=n; i++){
         ret = max(ret, psum[i]-psum[i-k]);
     }
     cout << ret << "\n";

@@ -12,12 +12,10 @@ int main(int argc, char const *argv[])
     sort(arr, arr+n);
     int s=0;
     int e=n-1;
-    while(s<=e){
+    while(s<e){
         if(arr[s]+arr[e] == m) { cnt++; s++; e--; }
         else if(arr[s]+arr[e] > m) e--;
         else s++;
     }
-
     cout << cnt <<"\n";
-
 }
