@@ -43,3 +43,11 @@ int main(int argc, char const *argv[])
 
     return 0;
 }
+
+
+/*
+5 3
+1 2 5 4 3
+5 5 6 6 5
+
+*/
