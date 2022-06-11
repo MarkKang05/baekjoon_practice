@@ -1,18 +1,15 @@
 #include <iostream>
-#include<algorithm>
-#include<string.h>
-
+#include <string>
 using namespace std;
 
-
-int main(int argc, char const *argv[])
+int main()
 {
 
     string str;
     cin >> str;
 
     int len = str.size();
-    int temp, sum=0;
+    int temp=0, sum=0;
     bool minus = false;
 
     for(int i=0; i<=len; i++){
@@ -33,5 +30,4 @@ int main(int argc, char const *argv[])
 
     cout << sum << "\n";
 
-    return 0;
 }
